@@ -441,7 +441,7 @@ local function GetFrame()
   tinsert(UISpecialFrames, frameName)
   UISpecialFramesId = #UISpecialFrames
   frame:SetTitle("Best in Slot Fearless "..GetAddOnMetadata("BestInSlotFearless", "Version"))
-  frame:SetStatusText(("By: %s, %s, %s, %s."):format(BestInSlot.Author1, BestInSlot.Author2, BestInSlot.Author3, BestInSlot.Author4))
+  frame:SetStatusText(("By: %s."):format(BestInSlot.Author4))
   local FrameBackdrop = {
     bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark",
     edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
