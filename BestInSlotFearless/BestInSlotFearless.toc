@@ -1,0 +1,13 @@
+## Interface: 80100
+## Title: Best In Slot Fearless
+## Notes: Keep track of your, your raid members and your guilds Best in Slot list!
+## Author: Beleria @ Argent Dawn-EU, Anhility @ Ravencrest-EU, Sar\195\173th @ Tarren Mill-EU, Zybaki @ Blackhand-EU
+## Version: v8.3
+## SavedVariables: BestInSlotDB
+
+Libs\Libs.xml
+Locales\Locales.xml
+Include.xml
+Frames\Include.xml
+Modules\Include.xml
+

@@ -1,0 +1,8 @@
+## Interface: 80100
+## Title: Best In Slot Fearless [|cffff975bBattle for Azeroth Dungeons|r]
+## Notes: Battle for Azeroth Dungeon Module for BestInSlotFearless
+## Author: Beleria @ Argent Dawn-EU, Anhility @ Ravencrest-EU, Sar\195\173th @ Tarren Mill-EU, Zybaki @ Blackhand-EU
+## Version: v8.3
+## Dependencies: BestInSlotFearless
+
+BestInSlotFearless_BfaDungeons.lua

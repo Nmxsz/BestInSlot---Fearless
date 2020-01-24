@@ -1,0 +1,8 @@
+## Interface: 80100
+## Title: Best in Slot Fearless [|cffff975bBattle for Azeroth World|r]
+## Notes: Battle for Azeroth World Module for BestInSlotFearless
+## Author: Beleria @ Argent Dawn-EU, Anhility @ Ravencrest-EU, Sar\195\173th @ Tarren Mill-EU, Zybaki @ Blackhand-EU
+## Version: v8.3
+## Dependencies: BestInSlotFearless
+
+World.lua

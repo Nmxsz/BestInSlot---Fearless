@@ -1,0 +1,10 @@
+## Interface: 80100
+## Title: Best In Slot Fearless [|cffff975bBattle for Azeroth Raids|r]
+## Notes: Battle for Azeroth Raid Module for BestInSlotFearless
+## Author: Beleria @ Argent Dawn-EU, Anhility @ Ravencrest-EU, Sar\195\173th @ Tarren Mill-EU, Zybaki @ Blackhand-EU
+## Version: v8.3
+## Dependencies: BestInSlotFearless
+
+Uldir.lua
+DazarAlor.lua
+NyAlotha.lua
