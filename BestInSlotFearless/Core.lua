@@ -151,10 +151,10 @@ local data = {
   raidTiers = {},
   instances = {__default={
     difficultyconversion = {
-      -- [1] = 3, --default conversion of difficulties, normal -> 0
-      -- [2] = 5, --Heroic -> 5
-      -- [3] = 6,  --Mythic -> 6
-      -- [4] = 23,  --Mythic -> 6
+      [1] = 3, --default conversion of difficulties, normal -> 0
+      [2] = 5, --Heroic -> 5
+      [3] = 6,  --Mythic -> 6
+      [4] = 23,  --Mythic -> 6
       [3] = 1, --default conversion of difficulties, normal -> 0
       [2] = 2, --"Heroic" (Dungeons)
       [5] = 2, --"10 Player (Heroic)"
