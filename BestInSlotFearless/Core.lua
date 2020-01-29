@@ -151,9 +151,9 @@ local data = {
   raidTiers = {},
   instances = {__default={
     difficultyconversion = {
-      [1] = 3, --default conversion of difficulties, normal -> 0
-      [2] = 5, --Heroic -> 5
-      [3] = 6,  --Mythic -> 6
+      --[1] = 3, --default conversion of difficulties, normal -> 0
+      --[2] = 5, --Heroic -> 5
+      --[3] = 6,  --Mythic -> 6
       [4] = 23,  --Mythic -> 6
       [3] = 1, --default conversion of difficulties, normal -> 0
       [2] = 2, --"Heroic" (Dungeons)
@@ -1184,6 +1184,15 @@ function BestInSlot:GetDescription(datatype, arg1, arg2)
     arg2 = tonumber(arg2)
     if not arg2 then error("The GetDescription function for datatype TYPE_DIFFICULTY requires 2 argumets") end
     if type(arg1) == "number" then --assume it's a raid tier
+      if (type(arg2) == "number") then
+        if (arg2 == 3) then
+          arg2 = 1
+        elseif (arg2 == 5) then
+          arg2 = 2
+        elseif arg2 == 6 then
+          arg2 = 3
+        end
+      end
       return data.raidTiers[arg1].difficulties[arg2]
     elseif type(arg1) == "string" then --assume it's a dungeon
       return data.raidTiers[data.instances[arg1].raidTier].difficulties[arg2]

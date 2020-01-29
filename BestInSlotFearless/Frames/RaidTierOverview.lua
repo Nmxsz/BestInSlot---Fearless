@@ -146,7 +146,7 @@ function Overview:CheckSlotData(bisList, slotId, selectedDungeon, selectedRaidTi
             text = ("%s (%s)"):format(text, tconcat(specs, "/"))
           end
           if hasItemOnHigherDifficulty then
-            text = ("%s - %s"):format(text, (L["You have this item on '%s'"]):format(self:GetDescription(self.DIFFICULTY, selectedDungeon, hasItem)))
+            text = ("%s - %s"):format(text, (L["You have this item on '%s'"]):format(self:GetDescription(self.DIFFICULTY, selectedRaidTier, hasItem)))
           elseif hasItem then
             text = ("%s - %s"):format(text, L["You have this item"])
           end
@@ -409,7 +409,7 @@ function Overview:Draw(container)
   for i=1,#channels / 2 do
     local id = channels[(i * 2) - 1]
     local name = channels[i * 2]
-    if id and name and not tContains(globalchannels, name) then
+    if id and name and not tContains(globalchannels, name) and type(id)=="number" then
       dropdownReport:AddItem("channel"..id, name)
     end
   end
